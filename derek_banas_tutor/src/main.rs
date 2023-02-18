@@ -1,5 +1,6 @@
 #![allow(unused)]
 
+use std::arch::x86_64::_CMP_TRUE_UQ;
 use std::io;
 use rand::Rng;
 use std::io::{Write, BufReader, BufRead, ErrorKind};
@@ -8,8 +9,36 @@ use std::cmp::Ordering;
 
 fn main() {
 
-    let  random_num  = rand::thread_rng().gen_range(1..101);
-    println!("Random num: {}", random_num);
+    
+
+//    let my_age = 18;
+//    let votig_age = 18;
+//    match my_age.cmp(&votig_age){
+//        Ordering::Less => println!("Cant Vote"),
+//        Ordering::Greater => println!("Can Vote"),
+//        Ordering::Equal => println!("You Gained THER RIGHT ADGE"),
+// };
+    
+    // let age2 = 8; 
+    // match age2 {
+    //     1..=18 => println!("Important  Birthadyt"),
+    //     21 | 50 => println!("Important Birthday"),
+    //     65..=i32::MAX =>println!("Importatn Birthday"),
+    //     _ => println!("Not an Impartant Birthday"), // _ everything else 
+    // };
+
+    // let mut my_age = 47;           
+    // let can_vote = if my_age >= 18{
+    //     true
+    // }else{
+    //     false
+    // };
+
+    // println!("Can vote: {}", can_vote);
+
+
+    // let  random_num  = rand::thread_rng().gen_range(1..101);
+    // println!("Random num: {}", random_num);
 
     // let num_1:f32 = 1.1111111111111;
     // println!("f32: {}", num_1 + 0.1111111111111);
@@ -36,6 +65,5 @@ fn main() {
 
     
     // println!("Hello, {}! {}", name.trim_end(), greeting);
-
 
 }
