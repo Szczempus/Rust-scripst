@@ -8,9 +8,20 @@ use std::fs::File;
 use std::{io, vec};
 use std::io::{BufRead, BufReader, ErrorKind, Write};
 
+fn get_su(x: i32, y:i32) -> (i32) {
+    return x+y;
+}
+
+fn get2(x:i32) -> (i32, i32){
+    return (x+1, x+2);
+}
+
 fn main() {
 
-        println!("Number of logical cores is {}", num_cpus::get());
+    let  (val1, val2 ) = get2(5);
+    println!("Nums: {}, {}", val1, val2);
+    println!("{}", get_su(5, 4));
+
     
 
     // let vec1: Vec<i32> = Vec::new();
